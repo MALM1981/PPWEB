@@ -16,8 +16,8 @@ $*/
 Route::view('/acercade','about')->name('About');
 Route::view('/contactanos','contact')->name('Contact');
 Route::view('/portafolio','portafolio')->name('Portafolio');
-Route::resource('colores','HomeController')->only(['index','show']);
-//Route::get('/','HomeControllers@index')->name('Inicio');
+//Route::resource('colores','HomeController')->only(['index','show']);
+Route::get('/','HomeController@index')->name('Inicio');
 
 
 
