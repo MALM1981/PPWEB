@@ -9,4 +9,5 @@
 	     <li> {{ $key['nombre'] }} </li>
 	  @endforeach
 </ul>
+<h1>Hasta luego......</h1>
  @endsection
