@@ -3,13 +3,14 @@
 <head>
 	<title>Blog - @yield('Titulo')</title>
 </head>
+<style type="text/css">
+	.active a{
+		color: red;
+		text-decoration: none;
+	}
+</style>
 <body>
- <nav>
- 	<?php echo "<li><a href=". route('Inicio').">Home</a></li>"; ?>
- 	<?php echo "<li><a href=". route('About').">About</a></li>"; ?>
-    <li><a href="/contactanos">Contáctanos</a></li>
-    <li><a href="/portafolio">Portafolio</a></li>
- </nav>
+    @include('Include.nav')
     @yield('TP')
 <footer>
 	<p>Pié de página</p>
